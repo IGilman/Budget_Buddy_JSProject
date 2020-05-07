@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Budget Buddy</title>
-</head>
+  </head>
 
-<body>
-    <header class="header">Budget Buddy</header>
+  <body>
+    <header class="header"></header>
     <main class="main">
-        <section class="budget-section">
-            <h1 class="budget-header">Weekly Budget</h1>
-            <form class="budget-form">
-                <label for="budget"></label>
-                <input type="number" id="budget" name="budget">
-                <button>add</button>
-            </form>
-        </section>
-        <div class="entertainment box">
-            <!-- need the image to fill the size of the box (absolute, relative) -->
-            <!-- <img src="./assets/Entertainment.jpg" alt="concert"> -->
-            <h2 class="heading">Entertainment</h2>
-            <form class="form">
-                <!-- do we need a separate text and number input here??? -->
-                <!-- Is a drop down necessary??? -->
-                <label for="item"></label>
-                <input type="text" id="item" name="item" />
-                <label for="money-spent"></label>
-                <input type="number" id="money-spent" name="money-spent" />
-                <button>add</button>
-            </form>
-            <!-- double check this box expands if given a large number -->
-            <p class="total">$0.00</p>
-        </div>
+      <section class="budget-section">
+        <h1 class="budget-header">Weekly Budget</h1>
+        <form class="budget-form">
+          <label for="budget"></label>
+          <input type="number" id="budget" name="budget" />
+          <button>add</button>
+        </form>
+      </section>
+      <div class="entertainment box">
+        <!-- need the image to fill the size of the box (absolute, relative) -->
+        <!-- <img src="./assets/Entertainment.jpg" alt="concert"> -->
+        <h2 class="heading">Entertainment</h2>
+        <form class="form">
+          <!-- do we need a separate text and number input here??? -->
+          <!-- Is a drop down necessary??? -->
+          <label for="item"></label>
+          <input type="text" id="item" name="item" />
+          <label for="money-spent"></label>
+          <input type="number" id="money-spent" name="money-spent" />
+          <button>add</button>
+        </form>
+        <!-- double check this box expands if given a large number -->
+        <p class="total">$0.00</p>
+      </div>
 
-        <div class="food box">
-            <h2 class="heading">Food</h2>
-            <form class="form">
-                <!-- do we need a separate text and number input here??? -->
-                <!-- Is a drop down necessary??? -->
-                <label for="item"></label>
-                <input type="text" id="item" name="item" />
-                <label for="money-spent"></label>
-                <input type="number" id="money-spent" name="money-spent" />
-                <button>add</button>
-            </form>
-            <p class="total">$0.00</p>
-        </div>
-        <div class="clothing box">
-            <h2 class="heading">Clothing</h2>
-            <form class="form">
-                <!-- do we need a separate text and number input here??? -->
-                <!-- Is a drop down necessary??? -->
-                <label for="item"></label>
-                <input type="text" id="item" name="item" />
-                <label for="money-spent"></label>
-                <input type="number" id="money-spent" name="money-spent" />
-                <button>add</button>
-            </form>
-            <p class="total">$0.00</p>
-        </div>
-        <div class="bills box">
-            <h2 class="heading">Bills</h2>
-            <form class="form">
-                <!-- do we need a separate text and number input here??? -->
-                <!-- Is a drop down necessary??? -->
-                <label for="item"></label>
-                <input type="text" id="item" name="item" />
-                <label for="money-spent"></label>
-                <input type="number" id="money-spent" name="money-spent" />
-                <button>add</button>
-            </form>
-            <p class="total">$0.00</p>
-        </div>
+      <div class="food box">
+        <h2 class="heading">Food</h2>
+        <form class="form">
+          <!-- do we need a separate text and number input here??? -->
+          <!-- Is a drop down necessary??? -->
+          <label for="item"></label>
+          <input type="text" id="item" name="item" />
+          <label for="money-spent"></label>
+          <input type="number" id="money-spent" name="money-spent" />
+          <button>add</button>
+        </form>
+        <p class="total">$0.00</p>
+      </div>
+      <div class="clothing box">
+        <h2 class="heading">Clothing</h2>
+        <form class="form">
+          <!-- do we need a separate text and number input here??? -->
+          <!-- Is a drop down necessary??? -->
+          <label for="item"></label>
+          <input type="text" id="item" name="item" />
+          <label for="money-spent"></label>
+          <input type="number" id="money-spent" name="money-spent" />
+          <button>add</button>
+        </form>
+        <p class="total">$0.00</p>
+      </div>
+      <div class="bills box">
+        <h2 class="heading">Bills</h2>
+        <form class="form">
+          <!-- do we need a separate text and number input here??? -->
+          <!-- Is a drop down necessary??? -->
+          <label for="item"></label>
+          <input type="text" id="item" name="item" />
+          <label for="money-spent"></label>
+          <input type="number" id="money-spent" name="money-spent" />
+          <button>add</button>
+        </form>
+        <p class="total">$0.00</p>
+      </div>
+      <!-- <footer> -->
+      <div class="countDown">
+        <p class="budget">$0.00</p>
+      </div>
+      <!-- </footer> -->
     </main>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
