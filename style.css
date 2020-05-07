@@ -1,6 +1,6 @@
 /* browser resets */
 /* body, .heading, .total,.budget-header*/
-body,h1, h2 { 
+body, h1, h2 { 
     margin: 0;
 }
 
@@ -8,8 +8,8 @@ body,h1, h2 {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 50vh;
+    justify-content: space-between;
+    height: 75vh;
 }
 .header {
     background-color: violet;
@@ -29,14 +29,16 @@ body,h1, h2 {
     flex-direction: column;
 }
 
-.entertainment {
+
+
+.box {
     background-color: gray;
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 10px;
-    background-image: url(./assets/Entertainment.jpg);
-    /* background-size: 100% 100%;
+    /* background-image: url(./assets/Entertainment.jpg); 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: auto; */
 }
@@ -56,6 +58,8 @@ body,h1, h2 {
 .total {
     background-color: white;
     position: absolute;
-    right: 0;
-    /* margin: 0; */
+    right: 5px;
+    top: 5px;
+    margin: 0;
+    padding: 10px;
 }
