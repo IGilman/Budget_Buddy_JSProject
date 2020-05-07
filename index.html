@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Budget Buddy</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>Budget Buddy</header>
+    <main>
+      <form>
+        Weekly Budget
+        <button>add</button>
+      </form>
+
+      <div class="entertainment">
+        <h2>Entertainment</h2>
+        <form>
+          <!-- do we need a separate text and number input here??? -->
+          <!-- Is a drop down necessary??? -->
+          <label for="item"></label>
+          <input type="text" id="item" name="item" />
+          <label for="money-spent"></label>
+          <input type="number" id="money-spent" name="money-spent" />
+          <button>add</button>
+        </form>
+        <p>$0 (adds total)</p>
+      </div>
+
+      <div class="food">Food</div>
+      <div class="clothing">Clothing</div>
+      <div class="bills">Bills</div>
+    </main>
+
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
