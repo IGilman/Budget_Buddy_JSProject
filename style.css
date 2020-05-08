@@ -4,6 +4,7 @@ body,
 h1,
 h2 {
   margin: 0;
+  font-family: "Khand", sans-serif;
 }
 
 .main {
@@ -53,6 +54,7 @@ h2 {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  font-family: "Khand", sans-serif;
 }
 
 .total {
