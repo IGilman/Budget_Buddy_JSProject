@@ -14,7 +14,7 @@
         <h1 class="budget-header">Weekly Budget</h1>
         <form class="budget-form">
           <label for="budget"></label>
-          <input type="number" id="budget" name="budget" />
+          <input type="number" id="budget" name="budget" step="0.01" />
           <button>add</button>
         </form>
       </section>
@@ -24,59 +24,79 @@
             <!-- need the image to fill the size of the box (absolute, relative) -->
             <!-- <img src="./assets/Entertainment.jpg" alt="concert"> -->
             <h2 class="heading">Entertainment</h2>
-            <form class="form">
+            <form class="entertainment-input form">
               <!-- do we need a separate text and number input here??? -->
               <!-- Is a drop down necessary??? -->
               <label for="item"></label>
               <input type="text" id="item" name="item" />
               <label for="money-spent"></label>
-              <input type="number" id="money-spent" name="money-spent" />
+              <input
+                type="number"
+                id="money-spent"
+                name="money-spent"
+                step="0.01"
+              />
               <button>add expense</button>
             </form>
             <!-- double check this box expands if given a large number -->
-            <p class="total">$0.00</p>
+            <p class="entertainment-sub total">$0.00</p>
           </div>
 
           <div class="food box">
             <h2 class="heading">Food</h2>
-            <form class="form">
+            <form class="food-input form">
               <!-- do we need a separate text and number input here??? -->
               <!-- Is a drop down necessary??? -->
               <label for="item"></label>
               <input type="text" id="item" name="item" />
               <label for="money-spent"></label>
-              <input type="number" id="money-spent" name="money-spent" />
+              <input
+                type="number"
+                id="money-spent"
+                name="money-spent"
+                step="0.01"
+              />
               <button>add</button>
             </form>
-            <p class="total">$0.00</p>
+            <p class="food-sub total">$0.00</p>
           </div>
         </section>
         <section class="half-half">
           <div class="clothing box">
             <h2 class="heading">Clothing</h2>
-            <form class="form">
+            <form class="clothing-input form">
               <!-- do we need a separate text and number input here??? -->
               <!-- Is a drop down necessary??? -->
               <label for="item"></label>
               <input type="text" id="item" name="item" />
               <label for="money-spent"></label>
-              <input type="number" id="money-spent" name="money-spent" />
+              <input
+                type="number"
+                id="money-spent"
+                name="money-spent"
+                step="0.01"
+              />
               <button>add</button>
             </form>
-            <p class="total">$0.00</p>
+            <p class="clothing-sub total">$0.00</p>
           </div>
           <div class="bills box">
             <h2 class="heading">Bills</h2>
-            <form class="form">
+            <form class="bills-input form">
               <!-- do we need a separate text and number input here??? -->
               <!-- Is a drop down necessary??? -->
               <label for="item"></label>
               <input type="text" id="item" name="item" />
               <label for="money-spent"></label>
-              <input type="number" id="money-spent" name="money-spent" />
+              <input
+                type="number"
+                id="money-spent"
+                name="money-spent"
+                step="0.00"
+              />
               <button>add</button>
             </form>
-            <p class="total">$0.00</p>
+            <p class="bills-sub total">$0.00</p>
           </div>
         </section>
       </section>
