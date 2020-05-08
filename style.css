@@ -77,41 +77,41 @@ h2 {
   background-color: white;
 }
 
-.list-container{
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right:0;
-    display: none;
-    /* ^^^^^^^ this will need to be triggered to "display flex" via javascript when 
+.list-container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: none;
+  /* ^^^^^^^ this will need to be triggered to "display flex" via javascript when 
     the Receipt button is triggered */
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.list-receipt{
-    background-color: green;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.list-receipt {
+  background-color: green;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pcolor{
-    color: white;
+.pcolor {
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
-    .desktop-view {
-        display: flex;
-    }
+  .desktop-view {
+    display: flex;
+  }
 
-    .half-half {
-        flex: 1;
-    }
-    .box {
-        margin: 10px
-    }
+  .half-half {
+    flex: 1;
+  }
+  .box {
+    margin: 10px;
+  }
 }
