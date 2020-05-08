@@ -11,6 +11,11 @@ let billsInput = document.querySelector(".bills-input");
 let budgetTotal = document.querySelector(".budget-form");
 let budgetDisplay = document.querySelector(".budget");
 
+let receiptList = document.querySelector(".list-item");
+let receiptButton = document.querySelector(".receipt");
+let showReceipt = document.querySelector(".list-container");
+let closeReceipt = document.querySelector(".close");
+
 let budget = 0;
 
 let entertainmentSubTotal = 0;
@@ -42,9 +47,10 @@ entertainmentInput.addEventListener("submit", (event) => {
     budget -= entertainmentAmount;
     budgetDisplay.innerText = `$${budget.toFixed(2)}`;
     entertainmentSubTotal += Number(entertainmentAmount);
-
     entertainmentTotal.innerText = `$${entertainmentSubTotal.toFixed(2)}`;
-
+    let receiptItem = document.createElement("li");
+    receiptItem.innerText = `${entertainmentPurchase}: $${entertainmentAmount} (Entertainment)`;
+    receiptList.append(receiptItem);
     entertainmentInput.reset();
   }
 });
@@ -61,9 +67,10 @@ foodInput.addEventListener("submit", (event) => {
     budget -= foodAmount;
     budgetDisplay.innerText = `$${budget.toFixed(2)}`;
     foodSubTotal += Number(foodAmount);
-
     foodTotal.innerText = `$${foodSubTotal.toFixed(2)}`;
-
+    let receiptItem = document.createElement("li");
+    receiptItem.innerText = `${foodPurchase}: $${foodAmount} (Food)`;
+    receiptList.append(receiptItem);
     foodInput.reset();
   }
 });
@@ -80,9 +87,10 @@ clothingInput.addEventListener("submit", (event) => {
     budget -= clothingAmount;
     budgetDisplay.innerText = `$${budget.toFixed(2)}`;
     clothingSubTotal += Number(clothingAmount);
-
     clothingTotal.innerText = `$${clothingSubTotal.toFixed(2)}`;
-
+    let receiptItem = document.createElement("li");
+    receiptItem.innerText = `${clothingPurchase}: $${clothingAmount} (Clothing)`;
+    receiptList.append(receiptItem);
     clothingInput.reset();
   }
 });
@@ -99,9 +107,24 @@ billsInput.addEventListener("submit", (event) => {
     budget -= billsAmount;
     budgetDisplay.innerText = `$${budget.toFixed(2)}`;
     billsSubTotal += Number(billsAmount);
-
     billsTotal.innerText = `$${billsSubTotal.toFixed(2)}`;
-
+    let receiptItem = document.createElement("li");
+    receiptItem.innerText = `${billsPurchase}: $${billsAmount} (Bills)`;
+    receiptList.append(receiptItem);
     billsInput.reset();
   }
+});
+
+// let receiptList = document.querySelector(".list-item");
+// let receiptButton = document.querySelector(".receipt");
+// let showReceipt = document.querySelector(".list-container");
+// let closeReceipt = document.querySelector(".close");
+
+receiptButton.addEventListener("click", () => {
+  showReceipt.style.display = "flex";
+});
+
+closeReceipt.addEventListener("click", () => {
+  // showReceipt.stlye.display = "none";
+  console.log("click");
 });
