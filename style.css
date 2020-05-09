@@ -23,7 +23,8 @@ h2 {
 .budget-section {
   display: flex;
   flex-direction: column;
-  /* background: beige; */
+  background: hotpink;
+  border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -53,6 +54,8 @@ h2 {
   flex-direction: column;
   max-width: 50%;
   font-family: "Paytone One", sans-serif;
+  border-style: solid;
+  border-color: black;
 }
 
 .total {
