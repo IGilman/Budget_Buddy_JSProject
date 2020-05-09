@@ -16,6 +16,9 @@ let receiptButton = document.querySelector(".receipt");
 let showReceipt = document.querySelector(".list-container");
 let closeReceipt = document.querySelector(".close");
 
+let brokeAlert = document.querySelector(".broke-alert");
+let brokeButton = document.querySelector(".broke-close");
+
 let budget = 0;
 
 let entertainmentSubTotal = 0;
@@ -41,7 +44,7 @@ entertainmentInput.addEventListener("submit", (event) => {
   let entertainmentPurchase = entertainmentData.get("item");
   let entertainmentAmount = entertainmentData.get("money-spent");
   if (budget - entertainmentAmount < 0) {
-    window.alert("Not Enough Funds");
+    brokeAlert.style.display = "flex";
     entertainmentInput.reset();
   } else {
     budget -= entertainmentAmount;
@@ -61,7 +64,7 @@ foodInput.addEventListener("submit", (event) => {
   let foodPurchase = foodData.get("item");
   let foodAmount = foodData.get("money-spent");
   if (budget - foodAmount < 0) {
-    window.alert("Not Enough Funds");
+    brokeAlert.style.display = "flex";
     foodInput.reset();
   } else {
     budget -= foodAmount;
@@ -81,7 +84,7 @@ clothingInput.addEventListener("submit", (event) => {
   let clothingPurchase = clothingData.get("item");
   let clothingAmount = clothingData.get("money-spent");
   if (budget - clothingAmount < 0) {
-    window.alert("Not Enough Funds");
+    brokeAlert.style.display = "flex";
     clothingInput.reset();
   } else {
     budget -= clothingAmount;
@@ -101,7 +104,7 @@ billsInput.addEventListener("submit", (event) => {
   let billsPurchase = billsData.get("item");
   let billsAmount = billsData.get("money-spent");
   if (budget - billsAmount < 0) {
-    window.alert("Not Enough Funds");
+    brokeAlert.style.display = "flex";
     billsInput.reset();
   } else {
     budget -= billsAmount;
@@ -115,11 +118,6 @@ billsInput.addEventListener("submit", (event) => {
   }
 });
 
-// let receiptList = document.querySelector(".list-item");
-// let receiptButton = document.querySelector(".receipt");
-// let showReceipt = document.querySelector(".list-container");
-// let closeReceipt = document.querySelector(".close");
-
 receiptButton.addEventListener("click", () => {
   showReceipt.style.display = "flex";
 });
@@ -127,4 +125,8 @@ receiptButton.addEventListener("click", () => {
 closeReceipt.addEventListener("click", () => {
   showReceipt.style.display = "none";
   console.log("click");
+});
+
+brokeButton.addEventListener("click", () => {
+  brokeAlert.style.display = "none";
 });

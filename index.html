@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Khand&display=swap"
+      href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap"
       rel="stylesheet"
     />
     <title>Budget Buddy</title>
@@ -134,21 +134,30 @@
           </div>
         </section>
       </section>
-      <!-- <footer> -->
+
       <div class="countDown">
         <p class="budget">$0.00</p>
         <button class="receipt">Get Receipt</button>
       </div>
-      <!-- this "list container" is the popup for when you hit the receipt button
-        it is "display:none" by default -->
       <div class="list-container">
         <div class="list-receipt">
-          <h2>List of Items</h2>
+          <h2>Weekly Receipt</h2>
           <ul class="list-item"></ul>
         </div>
         <button class="close">Close</button>
       </div>
-      <!-- </footer> -->
+
+      <div class="broke-alert">
+        <div class="broke-image">
+          <img
+            src="./assets/alert.png"
+            alt="keep calm"
+            height="350"
+            width="300"
+          />
+        </div>
+        <button class="broke-close">Add More Money</button>
+      </div>
     </main>
 
     <script src="./script.js"></script>
