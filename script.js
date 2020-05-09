@@ -125,6 +125,6 @@ receiptButton.addEventListener("click", () => {
 });
 
 closeReceipt.addEventListener("click", () => {
-  // showReceipt.stlye.display = "none";
+  showReceipt.style.display = "none";
   console.log("click");
 });
